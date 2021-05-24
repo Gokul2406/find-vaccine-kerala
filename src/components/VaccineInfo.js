@@ -1,4 +1,4 @@
-import {Text, Heading} from "@chakra-ui/react";
+import {Text, Heading, Flex} from "@chakra-ui/react";
 import React from "react"
 
 export default class VaccineInfo extends React.Component {
@@ -10,6 +10,8 @@ export default class VaccineInfo extends React.Component {
 	render() {
 		return (
 			<>
+			<Flex height="100vh" width="100vw" p={12}>
+			<Flex direction="column" >
 			{this.props.vaccineInfo.map(v => (
 				<>
 				<Heading mt={3}>Address: {v.address}</Heading>
@@ -19,6 +21,8 @@ export default class VaccineInfo extends React.Component {
 			)
 			)
 			}
+			</Flex>
+				</Flex>
 			</>
 		)
 	}
