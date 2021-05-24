@@ -3,3 +3,4 @@
  
  ### TODO
  Better style for VaccineInfo Card
+ Switch To Typescript ???(Maybe depending on bugs)
